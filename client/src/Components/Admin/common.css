@@ -1,0 +1,60 @@
+/* Common CSS for all components */
+
+/* Style for buttons */
+button {
+    padding: 8px 16px;
+    background-color: #e67818;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  tables {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  tables th, tables td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-image: url('../Main/assets/sg.jpg'); /* Specify the path to your background image */
+    background-size: cover;
+    background-position: center;/* Add a background color to improve readability */
+  }
+  
+  
+  /* Style for input fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for images */
+  img {
+    vertical-align: middle;
+  
+  }
+  
+  /* Style for toast messages */
+  .Toastify__toast {
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #3bb19b;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #f34646;
+  }

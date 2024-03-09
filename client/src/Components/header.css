@@ -1,0 +1,70 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image:url('./Main/assets/23.jpg');;
+  padding: 10px 20px; /* Adjust padding as needed * /* Change the background color as needed */
+  color: white;
+  
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-repeat: no-repeat;
+
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header-content h1 {
+  margin-left: 5px; /* Adjust the margin as needed */
+  font-size: 20px; /* Reduce the font size */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a.button {
+  margin-right: 8px; /* Adjust the margin as needed */
+  padding: 10px 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 3px; /* Adjust the border radius as needed */
+  background-color: #f3f7f2; /* Change the background color as needed */
+  color: #030303; /* Change the text color as needed */
+  font-size: 12px; /* Reduce the font size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a.button:hover {
+  background-color: #f9faf9; /* Change the background color on hover as needed */
+}
+
+.nav .user-img { /* Reduce the size of the user icon */
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.nav .logout-button {
+  padding: 5px 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 3px; 
+  background-color: #dc3545; /* Change the background color as needed */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.nav .logout-button:hover {
+  background-color: #c82333;
+}
+

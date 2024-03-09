@@ -1,0 +1,82 @@
+.content-container {
+  margin-top:20px;
+  height: '100%';
+  background-image: url('./Main/assets/1.jpg'); /* Replace 'your-background-image-url.jpg' with the URL of your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center;
+  color:white;
+  margin-bottom:0px; 
+}
+
+table {
+  width: 100%;
+  color:rgb(248, 246, 247);
+  font-family:'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  border: 1px solid rgb(218, 122, 122);
+}
+
+th {
+  font-family: Times New Roman, serif;
+  padding: 10px;
+  color:aqua;
+  font-size:20px;
+  border: 1px solid #cecead;
+  
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ceadad;
+  
+}
+
+.content-container a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+
+  font-family: Times New Roman, serif;
+}
+.domain-filter {
+  margin-bottom: 20px;
+}
+
+.domain-filter p {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: rgb(22, 234, 163);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.domain-filter div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.options span {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  align-items: center; /* Center align content horizontally */
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: rgb(226, 19, 81);
+  cursor: pointer;
+}
+
+.options span:hover {
+  background-color: #616918;
+  color: #fff;
+}
+
+.domain-img {
+  width: 60px; /* Adjust the size of the domain image */
+  height: 60px; /* Maintain aspect ratio */
+  margin-bottom: 3px; /* Add some spacing between the image and text */
+}

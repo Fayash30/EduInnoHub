@@ -1,0 +1,37 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 10px;
+}
+
+.about-us
+{
+  width:48%;
+  color :white;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  font-size:16px;
+  flex-direction: column;
+}
+.contact {
+  width: 20%; 
+  font-family:'Times New Roman', Times, serif;
+  font-size:16px;
+  color :white;
+}
+.about-us h2 {
+  margin-bottom: 10px; 
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .about-us,
+  .contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,7 @@
+.admin-dashboard-container {
+    display: flex;
+}
+
+.selected-component {
+    margin-left: 20px; 
+}

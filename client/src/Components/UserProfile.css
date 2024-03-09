@@ -1,0 +1,83 @@
+.profile-container {
+  max-width: 600px;
+  margin:50px 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-image:url('./Main/assets/g.jpg');; /* Adjust padding as needed * /* Change the background color as needed */
+  color: white;
+  
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-repeat: no-repeat;
+}
+
+.profile-container h1 {
+  text-align: center;
+}
+
+.form-group-inline {
+  margin-bottom: 15px;
+}
+
+.form-group-inline label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+.form-group-inline input[type="text"],
+.form-group-inline input[type="tel"],
+.form-group-inline input[type="radio"],
+.form-group-inline input[list] {
+  width: calc(100% - 160px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group-inline input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group-inline button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group-inline button:hover {
+  background-color: #0056b3;
+}
+
+.User-profile {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-image:url('./Main/assets/bl.jpg');; /* Adjust padding as needed * /* Change the background color as needed */
+  color: white;
+  
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.User-profile p {
+  margin: 5px 0;
+}
+
+.User-profile button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.User-profile button:hover {
+  background-color: #0056b3;
+}

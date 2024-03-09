@@ -1,0 +1,9 @@
+body { 
+    background-image: url('./Main/assets/home.jpg'); 
+    background-size: cover; 
+    background-position: left center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }

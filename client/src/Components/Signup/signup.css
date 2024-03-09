@@ -1,0 +1,112 @@
+.signup-pages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.registration-containers {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 30px;
+  overflow-y: auto;
+  background-image: url('../Main/assets/1.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family:'Times New Roman', Times, serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group-inline {
+  display:flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  flex:1;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.input,
+.select,
+.textarea {
+  flex:2;
+  width: 100%;
+  padding: 8px;
+  margin-left:50px ;
+  border: 1px solid #d0ecd7;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  color: black; /* Set font color */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+.button {
+  margin-bottom: 10px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #5a1fda;
+  color: white; /* Set text color to black */
+}
+
+.button + .button {
+  margin-left: 10px; /* Adjust the spacing between buttons */
+  color: white; /* Set text color to white */
+}
+
+.form-group-inline .label {
+  margin-right: 10px;
+  color: black; /* Set font color */
+}
+
+.form-group-inline div {
+  display: flex;
+}
+
+.form-group-inline .label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group-inline input[type="radio"]:checked + .labels {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Additional styling for radio buttons */
+
+/* Styling for Toast Container */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast--info {
+  background-color: #3498db;
+}
+
+.Toastify__toast--success {
+  background-color: #2ecc71;
+}
+
+.Toastify__toast--warning {
+  background-color: #f39c12;
+}
+
+.Toastify__toast--error {
+  background-color: #e74c3c;
+  color: aliceblue;
+}
