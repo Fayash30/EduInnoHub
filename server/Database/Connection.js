@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 function DBConnect(){
-    mongoose.connect("mongodb+srv://fayash:admin123@cluster0.striptm.mongodb.net/Project?retryWrites=true&w=majority")
+    mongoose.connect(mongoURI)
     .then((conn) => {
         console.log("Connected to DB");
     }).catch((error) => {
