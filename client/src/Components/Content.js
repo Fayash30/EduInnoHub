@@ -2,27 +2,37 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Content.css';
 
+
+
+
 const Content = () => {
   const [projects, setProjects] = useState([]);
   const [allDomains, setAllDomains] = useState([]);
   const [selectedDomain, setSelectedDomain] = useState(null);
 
+  const carouselStyle = {
+    width: "50%",
+    margin: "0 auto",
+    borderRadius: "10px",
+  };
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/getprojects');
-        const data = await response.json();
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/getprojects');
+      const data = await response.json();
 
-        const uniqueDomains = ['All',...new Set(data.projects.map((project) => project.domain))];
-        setAllDomains(uniqueDomains);
-        setProjects(data.projects);
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-      }
-    };
+      setProjects(data.projects);
+      
 
-    fetchProjects();
-  }, []);
+      const uniqueDomains = ['All',...new Set(data.projects.map((project) => project.domain))];
+      setAllDomains(uniqueDomains);
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+    }
+  };
+
+  fetchProjects();
+}, []);
 
   const handleDomainClick = (domain) => {
     setSelectedDomain((prevDomain) => (prevDomain === domain ? null : domain));
@@ -37,6 +47,7 @@ const Content = () => {
     <>
       <div className='content-container'>
         <h1 align="center"> CURRENT PROJECTS </h1>
+        
         <div className='domain-filter'>
           <p>Filter by Domain:</p>
           <div>
@@ -50,7 +61,7 @@ const Content = () => {
               </span>
             ))}
           </div>
-        </div>
+        </div><center>
         <table className='table'>
           <thead>
             <tr>
@@ -62,7 +73,7 @@ const Content = () => {
           </thead>
           <tbody>
             {filteredProjects.map((project, index) => (
-              <tr key={project._id}>
+              <tr key={project._id} className="zoom-effect">
                 <td>{index + 1}</td>
                 <td>
                   <Link to={`/project/${project._id}`}>{project.title}</Link>
@@ -72,7 +83,7 @@ const Content = () => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></center>
       </div>
     </>
   );

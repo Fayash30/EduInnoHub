@@ -20,6 +20,8 @@ const master = require('./routes/Master');
 
 const upload = mongoGrid.upload;
 
+const chat = require('./routes/chat')
+
 app.post("/api/upload",userProfile.verifyToken ,  upload.single('file'), mongoGrid.projectupload);
 
 app.get("/metadata" , mongoGrid.getFiles);
@@ -40,7 +42,7 @@ app.delete('/api/deleteUser/:id',register.deleteUser);
 
 app.get('/getprojects',mongoGrid.getprojects);
 
-app.get('/getproject/:id' , mongoGrid.getproject);
+app.get('/getproject/:id' , mongoGrid.getproject);8
 
 app.post("/api/login" , signin.login);
 
@@ -72,6 +74,7 @@ app.get('/getcourses',master.getcourses);
 
 app.post('/postcourses',master.postcourses);
 
+app.use('/chat',chat);
 
 app.listen(5000 , ()=> {
     console.log("Server is Started...");

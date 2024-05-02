@@ -7,6 +7,7 @@ import Upload from './Components/Upload';
 import { SingleProjectView } from './Components/SingleProjectView';
 import ProfilePage from './Components/UserProfile';
 import AdminDashboard from './Components/Admin/Admin';
+import ChatRoom from './Components/ChatRoom';
 import "./Components/app.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/upload" element = { <Upload />} />
           <Route path='/Admin' element = { <AdminDashboard />} />
           <Route path = '/profile' element = { <ProfilePage /> } />
+          <Route path = '/chat' element = { <ChatRoom /> } />
         </Routes>
       </Router>
     </div>
