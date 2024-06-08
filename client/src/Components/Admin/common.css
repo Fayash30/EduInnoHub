@@ -4,14 +4,16 @@
 button {
     padding: 8px 16px;
     background-color: #e67818;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
   }
   
-  
+.content{
+  color: #ddd;
+}
   
   tables {
     width: 100%;
@@ -22,7 +24,7 @@ button {
   tables th, tables td {
     border: 1px solid #ddd;
     padding: 8px;
-    color:black;
+    color:rgb(255, 255, 255);
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     background-image: url('../Main/assets/sg.jpg'); /* Specify the path to your background image */

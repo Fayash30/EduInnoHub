@@ -138,7 +138,7 @@ const Domains = () =>{
 
             <div>
                 <h2>All Domains</h2>
-                <table>
+                <table className="content">
                     <thead>
                         <tr>
                             <th>S.No.</th>

@@ -40,7 +40,13 @@ const Header = () => {
                     <img src={logo} alt="Project Logo" width='60' height="60" />
                     </Link>
                     <h1>EDUINNOHUB</h1>
+                    
                 </div>
+                {/* <div className='chat'>
+                <Link to ='/chat'>
+                
+                </Link>
+                </div> */}
                 <div className='nav'>
                     <nav>
                         {isLoggedIn ? (
@@ -48,6 +54,7 @@ const Header = () => {
                              <Link to='/profile' className ="profile-link">
                              <img src={log} className = "user-img" alt="Profile Icon" width="45" height="45" />
                             </Link>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/chat-message.png" alt="chat-message"/>
                             <button onClick={handleLogout} className="logout-button">Logout</button>
                             </>
                         ) : (

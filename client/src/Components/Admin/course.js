@@ -139,7 +139,7 @@ const Courses = () =>{
 
             <div>
                 <h2>All courses</h2>
-                <table>
+                <table className="content">
                     <thead>
                         <tr>
                             <th>S.No.</th>
@@ -147,9 +147,9 @@ const Courses = () =>{
         
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         {courses.map((course, index) => (
-                            <tr key={course._id}>
+                            <tr key={course._id} color="white">
                                 <td>{index + 1}</td>
                                <td>
                         {editcourseId === course._id ? (

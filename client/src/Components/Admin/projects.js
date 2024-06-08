@@ -61,7 +61,7 @@ const Projects = () => {
     return (
     <>
          <div>
-                    <table>
+                    <table className="content">
                         <thead>
                             <tr>
                                 <th>S.No</th>
